@@ -1,0 +1,80 @@
+.powder{
+    padding-top: 150px;
+    padding-bottom: 122px;
+	background:#F8F8F8 url('../img/bg.jpg') no-repeat center top;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 1450px) {
+        padding-top: 180px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 90px;
+    }
+    &-inner{
+        padding-top: 70px;
+        padding-bottom: 100px;
+        background: linear-gradient(180deg, #F8F8F8 0%, #F8F8F8 66.81%, rgba(255, 255, 255, 0) 101.07%);
+        @media screen and (max-width: 1450px) {
+            padding-bottom: 30px;
+        }
+        &--padding{
+            padding-top: 150px;
+            padding-bottom: 70px;
+            @media screen and (max-width: 1450px) {
+                padding-top: 90px;
+            }
+            @media screen and (max-width: 767px) {
+                padding-top: 60px;
+            }
+            .video-right{
+                @media screen and (min-width: 1451px) and (max-width: 1500px) {
+                    padding-left: 115px;
+                }
+            }
+        }
+    }
+
+    &-yellow{
+        position: relative;
+        overflow: hidden;
+        padding-top: 122px;
+        margin-top: -122px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: block;
+            height: 122px;
+            width: 1920px;
+            background: transparent url('../img/bg-2.png') no-repeat center top;
+        }
+        .powder-inner{
+            padding-top: 50px;
+            background: linear-gradient(180deg, #FDF9F4 0.84%, #FDF9F4 56.45%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+    &-container{
+        max-width: 1640px;
+        padding: 0 20px;
+        margin: 0 auto;
+        @media screen and (max-width: 1450px) {
+            max-width: 730px;
+        }
+        @media screen and (max-width: 767px) {
+            max-width: 500px;
+        }
+    }
+    &-row{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+    &-aligncenter{
+        align-items: center;
+    }
+}

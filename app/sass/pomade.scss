@@ -1,0 +1,36 @@
+.pomade{
+    &-content{
+        max-width: 1680px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    &-slider{
+        padding: 95px 0;
+        @media screen and (min-width: 1201px) and (max-width: 1400px) {
+            padding: 95px 50px;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 35px 50px;
+        }
+        img{
+            max-width: 75px;
+        }
+        .alignment-slider_title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--light{
+            padding-top: 63px;
+            .alignment-slider_image{
+                margin-bottom: 15px;
+            }
+            img{
+                max-width: 164px;
+            }
+            .alignment-slider_item{
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.gloss{
+    &-slider{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 55px 0;
+        @media screen and (max-width: 1200px) {
+            display: block;
+            padding: 20px 0;
+        }
+        &_item{
+            flex-basis: 25%;
+            min-width: 25%;
+            margin-bottom: 45px;
+            @media screen and (max-width: 1200px) {
+                flex-basis: auto;
+                min-width: auto;
+                margin-bottom: 0;
+            }
+        }
+        &_image{
+            margin-bottom: 20px;
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 0;
+            }
+            img{
+                @media screen and (max-width: 1200px) {
+                    margin: 0 auto;
+                }
+                @media screen and (max-width: 767px) {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
